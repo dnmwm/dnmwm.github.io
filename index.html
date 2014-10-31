@@ -1,20 +1,36 @@
 <html>
-	<style>
-
-	{ margin: 0; padding: 0; }
-
-	html { 
-	        background: url('res/bg_1.jpg') no-repeat center center fixed; 
-	        -webkit-background-size: cover;
-	        -moz-background-size: cover;
-	        -o-background-size: cover;
-	        background-size: cover;
-	}
-
-
-	</style>
+	<head>
+		<style>
+			{ margin: 0; padding: 0; }
+			html { 
+			        background: url('res/bg_1.jpg') no-repeat center center fixed; 
+			        -webkit-background-size: cover;
+			        -moz-background-size: cover;
+			        -o-background-size: cover;
+			        background-size: cover;
+			}
+			.fb-like {
+				position: relative;
+				right: 20px;
+				bottom: 20px;
+			}
+		</style>
+	</head>
 	<audio autoplay="true">
     <source src="res/s_dnmwm.wav" type="audio/wav" />
+    <source src="res/s_dnmwm.mp3" type="audio/mpeg" />
+    <source src="res/s_dnmwm.ogg" type="audio/ogg" />
     Your browser does not support HTML5 audio.
 	</audio>
+	<body background="#000000">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=305051543036014&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-like" data-href="http://donotmesswith.me" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  </body>
 </html>
